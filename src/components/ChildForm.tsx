@@ -16,7 +16,7 @@ const ChildForm = ({
 	const submitChild = () => {
 		if (data[index].children)
 			data[index].children = [...data[index].children, { content: inputChild }];
-		data[index].children = [{ content: inputChild }];
+		else data[index].children = [{ content: inputChild }];
 		setInputChild("");
 	};
 
@@ -31,16 +31,17 @@ const ChildForm = ({
 	};
 
 	return (
-		<div>
-			<input
-				placeholder="Child content"
-				value={inputChild}
-				onChange={handleChildFormChange}
-				onKeyUp={handleKeyUp}
-			/>
+		<>
+			<div className="flex gap-4">
+				<input
+					value={inputChild}
+					onChange={handleChildFormChange}
+					onKeyUp={handleKeyUp}
+				/>
+				<button onClick={submitChild}>Add</button>
+			</div>
 			<DataList data={data[index].children} />
-			<button onClick={submitChild}>Submit</button>
-		</div>
+		</>
 	);
 };
 

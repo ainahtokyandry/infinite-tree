@@ -9,7 +9,7 @@ const DataList = ({
 		children: Array<any>;
 	}>;
 }) => (
-	<ul>
+	<ul className="list-none m-auto">
 		{data &&
 			data.map((value, key) => (
 				<Fragment key={key}>

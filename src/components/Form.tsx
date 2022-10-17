@@ -33,7 +33,7 @@ const Form = ({ reference = 0 }: { reference?: number }) => {
 				</label>
 				<input type="text" id="jsonInput" maxLength={20} />
 			</div>
-			<button type="submit">Submit</button>
+			<button type="submit">Add</button>
 		</form>
 	);
 };

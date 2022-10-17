@@ -1,0 +1,65 @@
+.flex {
+	display: flex;
+}
+
+.flex-col {
+	flex-direction: column;
+}
+
+.m-auto {
+	margin: auto;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.w-fit {
+	width: fit-content;
+}
+
+.h-screen {
+	height: 100vh;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.gap-4 {
+	gap: 1rem;
+}
+.gap-3 {
+	gap: 0.75rem;
+}
+.gap-2 {
+	gap: 0.5rem;
+}
+
+.outline-none {
+	outline: none;
+}
+
+.list-none {
+	list-style: none;
+}
+
+.m-4 {
+	margin: 1rem;
+}
+
+.p-4 {
+	padding: 1rem;
+}
+
+.m-0 {
+	margin: 0;
+}
+
+.h-fit {
+	height: fit-content;
+}
+
+.items-end {
+	align-items: flex-end;
+}
